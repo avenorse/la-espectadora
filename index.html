@@ -444,6 +444,7 @@ nav {
 .product-img-box {
   width: 100%;
   aspect-ratio: 2/3;
+  max-height: 320px;
   background: var(--cream-2);
   border: 1px solid var(--cream-3);
   border-radius: 3px;
@@ -869,11 +870,9 @@ function showPage(id) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// Buy button — replace href with real Stripe payment link
+// Buy button
 document.getElementById('buy-btn').addEventListener('click', function() {
-  // TODO: replace with real Stripe payment link
-  // window.open('https://buy.stripe.com/YOUR_LINK', '_blank');
-  alert('Add your Stripe payment link here.');
+  window.open('https://buy.stripe.com/9B64gAbapgwHdxb5N45Ne00', '_blank');
 });
 </script>
 
